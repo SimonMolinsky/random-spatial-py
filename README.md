@@ -58,7 +58,7 @@ pip install random-spatial-py
 
 ## API
 
-### `get_coordinates.points.random_from_point()`
+### `get_coordinates.utils.points.random_from_point()`
 
 > Generates random set of points from a given coordinates.
 
@@ -75,7 +75,7 @@ pip install random-spatial-py
 
 ---
 
-### `get_coordinates.export.export_txt()`
+### `get_coordinates.utils.export.export_txt()`
 
 Exports given list of points to csv file with the header `Lon/Lat`.
 
@@ -84,7 +84,7 @@ Exports given list of points to csv file with the header `Lon/Lat`.
 * `fname`: `str` - path to the file where points must be exported,
 * `points`: `List` - the set of random points.
 
-### `get_coordinates.export.export_json()`
+### `get_coordinates.utils.export.export_json()`
 
 Exports given list of points to json file with headers the **key** named `Lon/Lat`.
 
@@ -95,7 +95,7 @@ Exports given list of points to json file with headers the **key** named `Lon/La
 
 ---
 
-### `get_coordinates.show.show_points()`
+### `get_coordinates.utils.show.show_points()`
 
 Shows points on a map.
 

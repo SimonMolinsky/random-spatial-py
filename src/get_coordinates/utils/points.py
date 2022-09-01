@@ -39,8 +39,3 @@ def random_from_point(cx: float,
     edges = _get_edges(cx, cy, step_size)
     points_set = _create_points_set(edges, no)
     return points_set
-
-
-if __name__ == '__main__':
-    tpoint = [50.04, 12.34]
-    print(random_from_point(tpoint[0], tpoint[1]))
