@@ -1,14 +1,12 @@
+import os
 import sys
 import getopt
 
 import geopandas as gpd
-from src.points import random_from_point
-from src.show import show_points
-from src.export import export_json, export_txt
-
-
-BOUNDARIES = 'src/boundaries/world_countries.geojson'
-GDF = gpd.read_file(BOUNDARIES)
+from .boundaries.get_world_countries import get_countries
+from .utils.points import random_from_point
+from .utils.show import show_points
+from .utils.export import export_json, export_txt
 
 
 def help_str():
@@ -42,6 +40,7 @@ def run(x, y, n=None, step=None, txt=None, json=None, view=False, area_to_show=N
         export_json(json, pts)
 
     if view:
+        GDF = get_countries()
         show_points(points=pts, boundaries=GDF, country_postal=area_to_show)
 
     print('Longitude, Latitude')

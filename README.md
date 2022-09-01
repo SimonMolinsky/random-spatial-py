@@ -8,7 +8,7 @@ Generate random coordinates with Python!
 2. Run:
 
 ```shell
-python get_points.py -x 24.9375 -y 60.170833
+python -m get_coordinates -x 24.9375 -y 60.170833
 ```
 
 ```shell
@@ -25,7 +25,7 @@ python get_points.py -x 24.9375 -y 60.170833
 3. You may store results in a csv file or json file with options:
 
 ```shell
-python get_points.py -x 24.9375 -y 60.170833 --txt mycsv.csv --json myjson.json
+python -m get_coordinates -x 24.9375 -y 60.170833 --txt mycsv.csv --json myjson.json
 ```
 
 4. You may check results on a map with option:
@@ -33,7 +33,7 @@ python get_points.py -x 24.9375 -y 60.170833 --txt mycsv.csv --json myjson.json
 **Global view**:
 
 ```shell
-python get_points.py -x 24.9375 -y 60.170833 -v
+python -m get_coordinates -x 24.9375 -y 60.170833 -v
 ```
 
 ![Image with random points located near Helsinki, Finland and world countries borders](Figure_1.png "Show random points on the world map")
@@ -41,7 +41,7 @@ python get_points.py -x 24.9375 -y 60.170833 -v
 **Local view with country POSTAL code**:
 
 ```shell
-python get_points.py -x 24.9375 -y 60.170833 -p FIN
+python -m get_coordinates -x 24.9375 -y 60.170833 -p FIN
 ```
 
 ![Image with random points and Finnish border. Points are located near Helsinki.](Figure_2.png "Show random points within a finnish borders")
@@ -58,7 +58,7 @@ pip install random-spatial-py
 
 ## API
 
-### `src.points.random_from_point()`
+### `get_coordinates.points.random_from_point()`
 
 > Generates random set of points from a given coordinates.
 
@@ -75,7 +75,7 @@ pip install random-spatial-py
 
 ---
 
-### `src.export.export_txt()`
+### `get_coordinates.export.export_txt()`
 
 Exports given list of points to csv file with the header `Lon/Lat`.
 
@@ -84,7 +84,7 @@ Exports given list of points to csv file with the header `Lon/Lat`.
 * `fname`: `str` - path to the file where points must be exported,
 * `points`: `List` - the set of random points.
 
-### `src.export.export_json()`
+### `get_coordinates.export.export_json()`
 
 Exports given list of points to json file with headers the **key** named `Lon/Lat`.
 
@@ -95,7 +95,7 @@ Exports given list of points to json file with headers the **key** named `Lon/La
 
 ---
 
-### `src.show.show_points()`
+### `get_coordinates.show.show_points()`
 
 Shows points on a map.
 

@@ -43,5 +43,5 @@ if __name__ == '__main__':
     tpoint = [50.45, 30.523333]  # lat , lon
     rpoints = random_from_point(tpoint[1], tpoint[0])
     show_points(points=rpoints,
-                boundaries=gpd.read_file('boundaries/world_countries.geojson'),
+                boundaries=gpd.read_file('../boundaries/world_countries.geojson'),
                 country_postal='UA')
