@@ -36,7 +36,7 @@ python -m get_coordinates -x 24.9375 -y 60.170833 --txt mycsv.csv --json myjson.
 python -m get_coordinates -x 24.9375 -y 60.170833 -v
 ```
 
-![Image with random points located near Helsinki, Finland and world countries borders](Figure_1.png "Show random points on the world map")
+![Image with random points located near Helsinki, Finland and world countries borders](https://github.com/SimonMolinsky/random-spatial-py/blob/main/Figure_1.png "Show random points on the world map")
 
 **Local view with country POSTAL code**:
 
@@ -44,7 +44,7 @@ python -m get_coordinates -x 24.9375 -y 60.170833 -v
 python -m get_coordinates -x 24.9375 -y 60.170833 -p FIN
 ```
 
-![Image with random points and Finnish border. Points are located near Helsinki.](Figure_2.png "Show random points within a finnish borders")
+![Image with random points and Finnish border. Points are located near Helsinki.](https://github.com/SimonMolinsky/random-spatial-py/blob/main/Figure_2.png "Show random points within a finnish borders")
 
 ## Limits
 
