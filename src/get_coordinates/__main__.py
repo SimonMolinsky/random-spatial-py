@@ -1,10 +1,8 @@
-import os
 import sys
 import getopt
 
-import geopandas as gpd
 from .boundaries.get_world_countries import get_countries
-from .utils.points import random_from_point
+from src.get_coordinates.lib.points import random_from_point
 from .utils.show import show_points
 from .utils.export import export_json, export_txt
 
