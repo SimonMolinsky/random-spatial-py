@@ -58,7 +58,7 @@ pip install random-spatial-py
 
 ## API
 
-### `get_coordinates.utils.points.random_from_point()`
+### `get_coordinates.lib.points.random_from_point()`
 
 > Generates random set of points from a given coordinates.
 
